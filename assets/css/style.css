@@ -129,3 +129,58 @@ h1, h2 {
         right: 550px;
     }
 }
+
+/* ----- About section --- */
+
+#services-section {
+    height: 300px;
+}
+
+#left-about {
+    width: 33%;
+    float: left;
+}
+
+.left-about-services {
+    width: 60%;
+    float: right;
+    line-height: 20px;
+    clear: both;
+}
+
+#right-about {
+    width: 33%;
+    float: right;
+}
+
+.right-about-services {
+    width: 60%;
+    float: left;
+    line-height: 20px;
+    clear: both;
+}
+
+.left-about-services h2 {
+    font-size: 130%;
+}
+
+.right-about-services h2 {
+    font-size: 130%;
+}
+
+.right-about-services h2, 
+.right-about-services p {
+    text-align: right;
+}
+
+.central-about {
+    width: 33%;
+    margin: 0 auto;
+}
+
+.circle-container {
+    height: 300px;
+    width: 300px;
+    padding: 30px;
+}
+
