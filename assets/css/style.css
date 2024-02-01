@@ -3,12 +3,22 @@
 body {background-color: rgb(252, 238, 238);}
 
 .navbar {
-    background-color: rgba(47, 95, 253, 0.473);
+    background-color: rgba(18, 73, 252, 0.658);
     height: 75px;
 }
 
-.navbar-brand {
+.navbar-brand h1 {
     font-family: 'Quicksand', Arial, Helvetica, sans-serif;
     padding-right: 50px;
     font-weight: 700;
+}
+
+.nav-link {
+    font-weight: 500;
+}
+
+@media (max-width: 400px) {
+    .navbar-brand h1 {
+        font-size: 1rem;
+    }
 }
