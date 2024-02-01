@@ -1,46 +1,131 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
 body {background-color: rgb(252, 238, 238);}
 
-a {
-    text-decoration: none;
-}
+/* ----- header and brand --- */
 
-.navbar {
-    background-color: rgba(18, 73, 252, 0.658);
-    height: 65px;
-}
-
-.navbar-brand h1 {
+h1, h2 {
     font-family: 'Quicksand', Arial, Helvetica, sans-serif;
-    padding-right: 50px;
-    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 4px;
 }
 
-button.navbar-toggler {
-    padding-top: 0px;
+#brand {
+    float: left;
+    font-size: 280%;
+    margin-left: 30px;
+    color: #252525;
 }
 
-.navbar-toggler-icon {
-    font-size: 10px;
+#menu {
+    font-size: 110%;
+    letter-spacing: 4px;
+}
+
+#menu, #brand {
+    line-height: 75px;
+}
+
+#menu li {
+    float: right;
+    list-style-type: none;
+    margin-right: 30px;
+}
+
+#menu a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#menu a:hover {
+    text-decoration: underline;
+    text-underline-position: under;
+    color: inherit;
+}
+
+.active {
+    border-bottom: 2px solid #252525;
+}
+
+/* ----- Main Section --- */
+
+/* - hero Image - */
+
+#hero-outer {
+    height: 500px;
+    width: 100%;
+    overflow: hidden;
+
+    position: relative;
 }
 
 
-.nav-link {
-
+#cover-text, #cover-text h2 {
+    color: white;
 }
 
-@media (max-width: 400px) {
-    .navbar {
-        height: 40px;
+#hero-img {
+    height: 400px;
+    width: 100%;
+    background: url(../img/plumbing-ubend.jpg) no-repeat center center;
+
+    /* animates zoom effect on loading page*/
+    animation-name: hero-zoom;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes hero-zoom {
+    from{
+        transform: scale(0.9);
+        opacity: .5;
     }
-
-    .navbar-brand h1 {
-        font-size: 1rem;
+    to{
+        transform: scale(1);
+        opacity: 1;
     }
+}
 
-    button.navbar-toggler {
-        margin-top: -10px;
+#cover-text {
+    width: 300px;
+    height: 150px;
+
+    padding-top: 30px;
+    padding-left: 20px;
+
+    background-color: rgba(9, 95, 255, 0.85);
+
+    bottom: 10px;
+    right: 550px;
+
+    position: absolute;
+
+    animation-name: hero-text-zoom;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+#cover-text h2,
+#cover-text h3 {
+    font-size: 100%;
+    letter-spacing: 4px;
+}
+
+@keyframes hero-text-zoom {
+    from{
+        transform: scale(0.9);
+        opacity: .5;
+        right: 200px;
     }
-
+    to{
+        transform: scale(1);
+        opacity: 1;
+        right: 550px;
+    }
 }
