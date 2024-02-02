@@ -205,7 +205,7 @@ h1, h2 {
 
 #reviews .review-message {
     color: #fafafa;
-    background-color: rgba(0, 0, 0, .6);
+    background-color: rgba(0, 0, 0, .7);
     width: 33.33%;
     height: 230px;
     float: left;
@@ -219,20 +219,22 @@ h1, h2 {
 }
 
 #review .review-text {
-    width: 70%;
+    width: 75px;
 }
 
 .social-networks {
+    height: 75px;
     text-align: center;
 }
 
 .social-networks > li {
+    height: 75px;
     display: inline;
 }
 
 .social-networks i {
     font-size: 160%;
     margin: 1px;
-    padding: 5%;
+    padding: 3%;
     color: #3a3a3a;
 }
