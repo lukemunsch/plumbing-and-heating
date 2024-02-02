@@ -221,3 +221,18 @@ h1, h2 {
 #review .review-text {
     width: 70%;
 }
+
+.social-networks {
+    text-align: center;
+}
+
+.social-networks > li {
+    display: inline;
+}
+
+.social-networks i {
+    font-size: 160%;
+    margin: 1px;
+    padding: 5%;
+    color: #3a3a3a;
+}
