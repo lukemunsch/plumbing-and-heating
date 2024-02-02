@@ -77,14 +77,14 @@ h1, h2 {
 
     /* animates zoom effect on loading page*/
     animation-name: hero-zoom;
-    animation-duration: 5s;
+    animation-duration: 3s;
     animation-fill-mode: forwards;
 }
 
 @keyframes hero-zoom {
     from{
-        transform: scale(0.9);
-        opacity: .5;
+        transform: scale(0.8);
+        opacity: .2;
     }
     to{
         transform: scale(1);
@@ -108,7 +108,7 @@ h1, h2 {
     position: absolute;
 
     animation-name: hero-text-zoom;
-    animation-duration: 5s;
+    animation-duration: 3s;
     animation-fill-mode: forwards;
 }
 
@@ -121,7 +121,7 @@ h1, h2 {
 @keyframes hero-text-zoom {
     from{
         transform: scale(0.9);
-        opacity: .2;
+        opacity: .1;
         right: 40%;
     }
     to{
