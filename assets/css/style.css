@@ -74,6 +74,7 @@ h1, h2 {
     height: 400px;
     width: 100%;
     background: url(../img/plumbing-ubend.jpg) no-repeat center center;
+    overflow: hidden;
 
     /* animates zoom effect on loading page*/
     animation-name: hero-zoom;
@@ -194,6 +195,8 @@ h1, h2 {
     border-radius: 50%;
 }
 
+/* ----- Reviews section --- */
+
 #reviews {
     background-image: url(../img/panoramic-img.jpg);
     background-repeat: no-repeat;
@@ -207,7 +210,7 @@ h1, h2 {
     color: #fafafa;
     background-color: rgba(0, 0, 0, .7);
     width: 33.33%;
-    height: 230px;
+    height: 280px;
     float: left;
     padding: 30px 20px 0 20px;
     border: 3px solid white;
@@ -221,6 +224,8 @@ h1, h2 {
 #review .review-text {
     width: 75px;
 }
+
+/* social networks */
 
 .social-networks {
     height: 75px;
@@ -237,4 +242,98 @@ h1, h2 {
     margin: 1px;
     padding: 3%;
     color: #3a3a3a;
+}
+
+@media (max-width: 914px) {
+
+    /* sorting the header */
+    #brand {
+        width: 100%;
+        text-align: center;
+    }
+
+    #menu li {
+        width: 100%;
+        float: none;
+        text-align: center;
+        clear: both;
+        line-height: 30px;
+    }
+
+    /* adjusting left about section */
+    #left-about {
+        width: 100%;
+        float: left;
+    }
+    
+    .left-about-services {
+        width: 80%;
+        padding-left: 20%;
+        float: left;
+        text-align: center;
+        line-height: 20px;
+    }
+
+    /* adjusting right about section */
+    #right-about {
+        width: 100%;
+        float: left;
+    }
+    
+    .right-about-services {
+        width: 80%;
+        padding-left: 20%;
+        float: left;
+        text-align: center;
+        line-height: 20px;
+    }
+
+    .right-about-services h2, 
+    .right-about-services p {
+        text-align: center;
+    }
+
+    /* adjusting central about image section */
+    .central-about {
+        width: 100%;
+        float: left;
+        clear: both;
+    }
+    
+    #circle-container {
+        height: 300px;
+        width: 300px;
+        padding: 30px;
+        border: 2px solid #252525;
+        border-radius: 50%;
+        margin: 0 auto;
+    }
+
+    /* adjusting reviews */
+    #reviews .review-message {
+        width: 100%;
+        text-align: center;
+        padding-left: 20%;
+        padding-right: 20%;
+        height: auto;
+    }
+
+    #review .review-text {
+        margin-bottom: 20x;
+    }
+}
+
+@media (max-width: 667px) {
+    @keyframes hero-text-zoom {
+        from{
+            transform: scale(0.8);
+            opacity: .1;
+            left: 40%;
+        }
+        to{
+            transform: scale(1);
+            opacity: 1;
+            left: 2%;
+        }
+    }
 }
