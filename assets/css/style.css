@@ -6,7 +6,10 @@
     border: none;
 }
 
-body {background-color: rgb(252, 238, 238);}
+body {
+    background-color: rgb(252, 238, 238);
+    box-sizing: content-box;
+}
 
 /* ----- header and brand --- */
 
@@ -248,6 +251,7 @@ h1, h2 {
 
     /* sorting the header */
     #brand {
+        font-size: 200%;
         width: 100%;
         text-align: center;
     }
