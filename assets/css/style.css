@@ -8,7 +8,8 @@
 
 body {
     background-color: rgb(252, 238, 238);
-    box-sizing: content-box;
+    box-sizing: border-box;
+    width: 100%;
 }
 
 /* ----- header and brand --- */
@@ -254,6 +255,11 @@ h1, h2 {
         font-size: 200%;
         width: 100%;
         text-align: center;
+        margin-left: 0;
+    }
+
+    #menu {
+        padding-left: 0;
     }
 
     #menu li {
@@ -324,6 +330,10 @@ h1, h2 {
 
     #review .review-text {
         margin-bottom: 20x;
+    }
+
+    .social-networks i {
+        padding: 10% 4% 4% 4%;
     }
 }
 
